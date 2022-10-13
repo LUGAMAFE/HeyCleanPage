@@ -19,8 +19,11 @@
 
   @media only screen and (min-width: 1440px) {
     --loaderHeight: 120px;
+    --headerHeight: 80px;
   }
-
+  @media only screen and (min-width: 2000px) {
+    --headerHeight: 100px;
+  }
   @media only screen and (min-width: 2400px) {
     --loaderHeight: 130px;
   }
@@ -36,6 +39,9 @@ body {
   flex-direction: column;
   min-width: 320px;
   background-color: var(--darkColor);
+  @media only screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 * {

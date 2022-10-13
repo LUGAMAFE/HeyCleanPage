@@ -14,6 +14,18 @@ section {
     text-align: center;
     font-size: 38px;
     padding-bottom: 20px;
+    @media only screen and (min-width: 900px) {
+      font-size: 44x;
+      padding-bottom: 25px;
+    }
+    @media only screen and (min-width: 1440px) {
+      font-size: 50px;
+      padding-bottom: 30px;
+    }
+    @media only screen and (min-width: 2000px) {
+      font-size: 70px;
+      padding-bottom: 40px;
+    }
   }
   p,
   h3 {
@@ -21,5 +33,111 @@ section {
     font-size: 20px;
     width: 85%;
     padding-bottom: 20px;
+  }
+  @media only screen and (min-width: 900px) {
+    font-size: 20;
+    width: 85%;
+    padding-bottom: 25px;
+  }
+  @media only screen and (min-width: 1440px) {
+    font-size: 28px;
+    width: 85%;
+    padding-bottom: 30px;
+  }
+  @media only screen and (min-width: 2000px) {
+    font-size: 35px;
+    width: 85%;
+    padding-bottom: 40px;
+  }
+}
+.anchor > :first-child {
+  position: absolute;
+  left: 0px;
+  top: calc((var(--headerHeight) * -1));
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--headerHeight));
+  #carrusel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    #carouselIndicators {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border-width: 5px;
+        border-color: #fff;
+        background-color: rgba(0, 0, 0, 0.74);
+      }
+      .carousel-item {
+        .imagenesSlider {
+          width: 100%;
+          height: calc(100vh - var(--headerHeight));
+          background: fixed no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-color: var(--blueColor);
+          background-blend-mode: overlay;
+        }
+        #primeraimagen {
+          background-image: url(../IMG/21.jpg);
+        }
+
+        #segundaimagen {
+          background-image: url(../IMG/13.jpg);
+        }
+
+        #terceraimagen {
+          background-image: url(../IMG/29.jpg);
+        }
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        .TituloMainSlider {
+          font-family: "bodoni_sans_textbold";
+          font-size: 50px;
+          /*    text-shadow: -6px 8px var(--darkColor);*/
+        }
+        .SecondTitleMainSlider {
+          font-size: 25px;
+          /*    text-shadow: -4px 5px var(--darkColor);*/
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: flex;
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          height: 50px;
+          width: 50px;
+          min-height: 50px;
+          min-width: 50px;
+          background-size: 100%, 100%;
+          border-radius: 50%;
+          border: 5px solid white;
+          background-color: #000;
+          background-size: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
   }
 }
