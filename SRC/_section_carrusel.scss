@@ -136,7 +136,53 @@ section {
           display: flex;
           align-items: center;
           justify-content: center;
+          @media only screen and (min-width: 550px) {
+            height: 80px;
+            width: 80px;
+            background-size: 100%, 100%;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #000;
+            background-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
+      }
+    }
+    .TituloMainSlider {
+      @media only screen and (min-width: 700px) {
+        font-size: 60px;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 70px;
+      }
+      @media only screen and (min-width: 900px) {
+        font-size: 90px;
+      }
+      @media only screen and (min-width: 1440px) {
+        font-size: 110px;
+      }
+      @media only screen and (min-width: 2000px) {
+        font-size: 140px;
+      }
+    }
+    .SecondTitleMainSlider {
+      @media only screen and (min-width: 700px) {
+        font-size: 30px;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 35px;
+      }
+      @media only screen and (min-width: 900px) {
+        font-size: 45px;
+      }
+      @media only screen and (min-width: 1440px) {
+        font-size: 55px;
+      }
+      @media only screen and (min-width: 2000px) {
+        font-size: 70px;
       }
     }
   }
