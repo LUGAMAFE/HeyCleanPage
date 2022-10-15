@@ -1,0 +1,105 @@
+#galeria {
+  .wraper {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    #textoGaleria {
+      color: var(--whiteColor);
+      margin: 0 auto;
+      border: 8px outset #41a7b6;
+      margin-bottom: 5%;
+      border-radius: 50px;
+      .infoRegions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+      }
+      h3 {
+        color: var(--blueColor);
+        font-weight: bold;
+      }
+      p,
+      h3 {
+        padding: 0 0 1% 0;
+        font-size: 24px;
+      }
+    }
+  }
+  /****** Navigation styling *******/
+  .iso-nav {
+    text-align: center;
+    margin-bottom: 3%;
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 17px;
+        list-style: none;
+        color: var(--whiteColor);
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        padding: 15px 20px;
+        margin: 10px 5px;
+        border: 3px solid var(--blueColor);
+        -webkit-border-top-right-radius: 50px 50px;
+        -webkit-border-top-left-radius: 50px 50px;
+        -webkit-border-bottom-left-radius: 50px 50px;
+        -webkit-border-bottom-right-radius: 50px 50px;
+        height: 50px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .main-iso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item {
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      padding: 0 2% 5% 2%;
+      box-sizing: border-box;
+      img {
+        position: relative;
+        width: 100%;
+      }
+      figure {
+        &:hover {
+          filter: grayscale(0.2);
+          mix-blend-mode: luminosity;
+          cursor: zoom-in;
+        }
+      }
+    }
+    .imgFilter,
+    .imgFilter2 {
+      position: relative;
+      width: 100%;
+      background: linear-gradient(
+        to right,
+        var(--blueColor) 60%,
+        rgba(0, 0, 0, 0)
+      );
+      figure {
+        &:hover:after {
+          position: absolute;
+          font-family: "icomoon";
+          content: "\e914";
+          font-size: 60px;
+          color: #fff;
+          z-index: 100;
+          top: calc(50% - 30px);
+          left: calc(50% - 30px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+  --tiempo: 5.5s;
+  --darkColor: #232323;
+  --blueColor: #41a7b6;
+  --whiteColor: #ededed;
+  --headerHeight: 70px;
+  --loaderHeight: 50px;
+  @media only screen and (min-width: 400px) {
+    --loaderHeight: 75px;
+  }
+
+  @media only screen and (min-width: 550px) {
+    --loaderHeight: 100px;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    --loaderHeight: 110px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    --loaderHeight: 120px;
+    --headerHeight: 80px;
+  }
+  @media only screen and (min-width: 2000px) {
+    --headerHeight: 100px;
+  }
+  @media only screen and (min-width: 2400px) {
+    --loaderHeight: 130px;
+  }
+}
+
+html,
+body {
+  font-family: "bodoni_sans_text_regularRg", sans-serif;
+  font-size: 14px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: var(--darkColor);
+  @media only screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
