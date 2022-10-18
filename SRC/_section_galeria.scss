@@ -101,5 +101,61 @@
         }
       }
     }
+    .imgFilter2 {
+      figure {
+        &:hover {
+          &:after {
+            content: "\e912";
+          }
+        }
+      }
+    }
+  }
+  .active {
+    background: var(--blueColor);
+    color: #fff;
+  }
+  @media only screen and (min-width: 680px) {
+    .iso-nav ul li {
+      font-size: 19px;
+      height: 60px;
+    }
+  }
+
+  @media only screen and (min-width: 1250px) {
+    .main-iso .item {
+      width: 33%;
+      padding: 0 2%;
+      margin: 0 0 5% 0;
+    }
+    .wraper #textoGaleria p,
+    .wraper #textoGaleria h3 {
+      font-size: 28px;
+    }
+
+    .iso-nav ul li {
+      font-size: 22px;
+      padding: 20px 30px;
+      height: 70px;
+    }
+  }
+
+  @media only screen and (min-width: 1850px) {
+    .iso-nav ul li {
+      font-size: 28px;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    .iso-nav ul li {
+      font-size: 40px;
+      padding: 30px 35px;
+      height: 90px;
+    }
+
+    .wraper #textoGaleria p,
+    .wraper #textoGaleria h3 {
+      font-size: 45px;
+    }
   }
 }
