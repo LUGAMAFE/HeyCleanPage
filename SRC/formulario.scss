@@ -1,0 +1,104 @@
+#formularioCont {
+  position: relative;
+  width: 100%;
+  #formulario {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .formCampo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    label {
+      color: var(--blueColor);
+      font-size: 18px;
+    }
+    input,
+    textarea {
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      padding-left: 6px;
+      background-color: var(--whiteColor);
+    }
+    input {
+      height: 50px;
+    }
+    input[type="submit"] {
+      background-color: var(--blueColor);
+      color: var(--whiteColor);
+      width: 150px;
+      align-self: center;
+      -webkit-border-top-right-radius: 50px 50px;
+      -webkit-border-bottom-right-radius: 50px 50px;
+      -webkit-border-top-left-radius: 50px 50px;
+      -webkit-border-bottom-left-radius: 50px 50px;
+      margin-top: 4%;
+    }
+  }
+  @media only screen and (min-width: 550px) {
+    #formulario {
+      position: relative;
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    #formulario #soloInputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #formulario #soloInputs .formCampo {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    #formulario .formCampo {
+      margin-bottom: 3%;
+    }
+
+    #formulario .formCampo label {
+      font-size: 22px;
+    }
+    #formulario .formCampo input,
+    #formulario .formCampo textarea {
+      font-size: 22px;
+    }
+    #formulario .formCampo input {
+      height: 65px;
+    }
+    #formulario .formCampo input[type="submit"] {
+      width: 250px;
+      margin-top: 2%;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    #formulario .formCampo {
+      margin-bottom: 2%;
+    }
+
+    #formulario .formCampo label {
+      font-size: 30px;
+    }
+
+    #formulario .formCampo input,
+    #formulario .formCampo textarea {
+      font-size: 30px;
+    }
+    #formulario .formCampo input {
+      height: 80px;
+    }
+
+    #formulario .formCampo input[type="submit"] {
+      width: 400px;
+    }
+  }
+}
