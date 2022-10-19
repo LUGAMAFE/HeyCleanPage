@@ -1,0 +1,140 @@
+#siguenos {
+  background: #0f0f0f; /* Old browsers */
+  background: -moz-linear-gradient(top, #0f0f0f 2%, #41a7b6 94%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #0f0f0f 2%,
+    #41a7b6 94%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #0f0f0f 2%,
+    #41a7b6 94%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#41a7b6',GradientType=0 ); /* IE6-9 */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  #wrapperSiguenos {
+    width: 90%;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: var(--whiteColor);
+    }
+    p {
+      color: var(--whiteColor);
+    }
+  }
+}
+#redesSociales {
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 10px;
+    font-size: 2.5em;
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.2);
+    }
+    &:nth-child(1) {
+      background-color: #2b66b4;
+      &:before {
+        font-family: "icomoon";
+        content: "\ea90";
+
+        color: white;
+      }
+    }
+    // #redesSociales a:nth-child(2) {
+    //     background-color: #01AEF3;
+    // }
+
+    // #redesSociales a:nth-child(2):before {
+    //     font-family: 'icomoon';
+    // 	content: '\ea96';
+    //     color: white;
+    // }
+    &:nth-child(2) {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      &:before {
+        font-family: "icomoon";
+        content: "\ea92";
+
+        color: white;
+      }
+    }
+    &:nth-child(3) {
+      background-color: #ff0000;
+      &:before {
+        font-family: "icomoon";
+        content: "\ea9d";
+
+        color: white;
+      }
+    }
+  }
+  @media only screen and (min-width: 450px) {
+    a {
+      width: 75px;
+      height: 75px;
+      margin: 0 10px;
+      font-size: 2.7em;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    a {
+      width: 85px;
+      height: 85px;
+      margin: 0 15px;
+      font-size: 2.8em;
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+    a {
+      width: 95px;
+      height: 95px;
+      margin: 0 20px;
+      font-size: 3.4em;
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    a {
+      width: 120px;
+      height: 120px;
+      margin: 0 30px;
+      font-size: 4.2em;
+    }
+  }
+}
