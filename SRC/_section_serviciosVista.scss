@@ -24,11 +24,6 @@
       padding: 0;
     }
   }
-  #serviciosInfo {
-    position: relative;
-    background-color: var(--blueColor);
-    width: 32%;
-  }
   #showServices {
     position: relative;
     width: 100%;
@@ -115,7 +110,16 @@
         width: 47%;
         height: auto;
         margin-bottom: 0px;
+        img {
+          max-height: none;
+          width: 100%;
+        }
       }
     }
   }
+}
+#serviciosInfo {
+  position: relative;
+  background-color: var(--blueColor);
+  width: 32%;
 }

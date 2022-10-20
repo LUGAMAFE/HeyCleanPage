@@ -1,10 +1,6 @@
 .slideanim {
   visibility: hidden;
   visibility: visible\9; /*For old IE browsers IE6-8 */
-  .slide {
-    visibility: visible;
-    animation: slide 1s;
-  }
   &:after {
     /* useful when its child elements are float:left; */
     content: "";
@@ -12,7 +8,10 @@
     clear: both;
   }
 }
-
+.slideanim.slide {
+  visibility: visible;
+  animation: slide 1s;
+}
 @keyframes slide {
   0% {
     opacity: 0;
