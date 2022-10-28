@@ -26,6 +26,23 @@ header {
       margin-left: 25px;
       width: 200px;
 
+      @media only screen and (min-width: 450px) {
+        width: 200px;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        margin-left: 15%;
+        width: 250px;
+      }
+      @media only screen and (min-width: 1440px) {
+        margin-left: 15%;
+        width: 350px;
+      }
+      @media only screen and (min-width: 2000px) {
+        margin-left: 15%;
+        width: 400px;
+      }
+
       img {
         position: relative;
         height: 85%;
@@ -38,10 +55,16 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        @media only screen and (min-width: 1440px) {
+          font-size: 1.4em;
+        }
         #heyTi {
           font-family: "lactosaregular";
           font-size: 1.6em;
           margin: 0;
+          @media only screen and (min-width: 1440px) {
+            font-size: 1.5em;
+          }
         }
         #espaciosTi {
           font-family: "bodoni_sans_text_regularRg", sans-serif !important;
@@ -61,40 +84,6 @@ header {
     justify-content: space-between;
     #menuButton {
       display: none;
-    }
-  }
-  #headerUp {
-    figure {
-      @media only screen and (min-width: 450px) {
-        width: 200px;
-      }
-
-      @media only screen and (min-width: 1024px) {
-        margin-left: 15%;
-        width: 250px;
-      }
-      @media only screen and (min-width: 1440px) {
-        margin-left: 15%;
-        width: 350px;
-      }
-      @media only screen and (min-width: 2000px) {
-        margin-left: 15%;
-        width: 400px;
-      }
-
-      @media only screen and (min-width: 1440px) {
-        #titulosLogo {
-          font-size: 1.4em;
-        }
-      }
-
-      @media only screen and (min-width: 1440px) {
-        #titulosLogo {
-          #heyTi {
-            font-size: 1.5em;
-          }
-        }
-      }
     }
   }
 }
