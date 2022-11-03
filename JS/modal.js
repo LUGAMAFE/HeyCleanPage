@@ -1,11 +1,11 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+
   $(".imgFilter").click(function () {
     var imagenactual = $(this).children().children();
     modal.style.display = "block";
