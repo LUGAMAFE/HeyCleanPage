@@ -1,6 +1,5 @@
-var servicios = $(".servicesItem");
-
 document.addEventListener("DOMContentLoaded", () => {
+  var servicios = $(".servicesItem");
   var serviciosSize = servicios.length;
   $(servicios).hide();
 
