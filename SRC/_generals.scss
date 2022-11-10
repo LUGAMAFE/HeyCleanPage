@@ -39,6 +39,9 @@ body {
   flex-direction: column;
   min-width: 320px;
   background-color: var(--darkColor);
+  @media only screen and (max-width: 280px) {
+    margin-left: -3.5%;
+  }
   @media only screen and (min-width: 1024px) {
     font-size: 14px;
   }

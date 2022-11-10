@@ -136,6 +136,9 @@ section {
         .SecondTitleMainSlider {
           font-size: 25px;
           /*    text-shadow: -4px 5px var(--darkColor);*/
+          @media only screen and (min-width: 280px) {
+            font-size: 20px;
+          }
 
           @media only screen and (min-width: 700px) {
             font-size: 30px;
@@ -154,10 +157,18 @@ section {
           }
         }
       }
-
+      .carousel-control-prev {
+        @media only screen and (max-width: 280px) {
+          left: -2%;
+        }
+      }
       .carousel-control-prev,
       .carousel-control-next {
         display: flex;
+        @media only screen and (max-width: 280px) {
+          width: 30%;
+          margin: 1%;
+        }
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
           height: 50px;
@@ -172,6 +183,7 @@ section {
           display: flex;
           align-items: center;
           justify-content: center;
+
           @media only screen and (min-width: 550px) {
             height: 80px;
             width: 80px;
