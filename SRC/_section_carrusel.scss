@@ -175,6 +175,12 @@ section {
           display: flex;
           align-items: center;
           justify-content: center;
+          @media only screen and (max-width: 280px) {
+            background-size: 23px;
+            height: 40px;
+            min-height: 40px;
+            min-width: 40px;
+          }
 
           @media only screen and (min-width: 550px) {
             height: 80px;

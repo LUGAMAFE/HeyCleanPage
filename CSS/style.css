@@ -211,21 +211,24 @@ body {
 
 #backmodal {
   position: relative;
-  width: 75%;
-  height: 55%;
-  margin: 10%;
+  width: 65%;
   background: var(--blueColor);
   display: flex;
-  border-radius: 1rem; }
-  @media only screen and (max-width: 1200px) {
+  border-radius: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 30vh auto; }
+  @media only screen and (min-width: 281px) {
     #backmodal {
-      width: 50%;
-      margin: 5% 25%;
-      min-width: 550px;
-      flex-direction: column;
-      height: 90%;
-      justify-content: space-evenly;
-      align-items: center; } }
+      width: 75%;
+      margin: 10% auto; } }
+  @media only screen and (min-width: 1200px) {
+    #backmodal {
+      width: 75%;
+      height: 55%;
+      margin: 10%;
+      flex-direction: row; } }
 
 /* The Close Button */
 .close {
@@ -282,17 +285,19 @@ body {
 /* Modal Content (Image) */
 .modal-content {
   background: var(--blueColor);
-  max-width: 60vh;
   animation-name: fade;
   animation-duration: 0.6s;
   border-radius: 1rem;
-  border: none;
-  min-width: 40vh; }
-  @media only screen and (max-width: 1200px) {
+  border: none; }
+  @media only screen and (min-width: 281px) {
     .modal-content {
+      min-width: 40vh;
+      max-width: 40vh; } }
+  @media only screen and (min-width: 1200px) {
+    .modal-content {
+      max-width: 60vh;
       width: 50%;
-      height: auto;
-      padding: 10px;
+      height: 100%;
       border-radius: 3rem; } }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -306,6 +311,9 @@ body {
   font-size: 20px;
   animation-name: fade;
   animation-duration: 0.6s; }
+  @media only screen and (max-width: 281px) {
+    #caption {
+      font-size: 10px; } }
   @media only screen and (max-width: 912px) {
     #caption {
       font-size: 20px; } }
@@ -364,7 +372,7 @@ header {
         position: relative;
         height: 85%; }
       header #headerUp figure #titulosLogo {
-        height: var(--headerHeight);
+        height: a var(--headerHeight);
         width: 100%;
         padding-left: 2%;
         display: flex;
@@ -378,6 +386,12 @@ header {
           font-family: "lactosaregular";
           font-size: 1.6em;
           margin: 0; }
+          @media only screen and (min-width: 280px) {
+            header #headerUp figure #titulosLogo #heyTi {
+              font-size: 1.2em; } }
+          @media only screen and (min-width: 315px) {
+            header #headerUp figure #titulosLogo #heyTi {
+              font-size: 1.5em; } }
           @media only screen and (min-width: 1440px) {
             header #headerUp figure #titulosLogo #heyTi {
               font-size: 1.5em; } }
@@ -616,6 +630,15 @@ section {
           display: flex;
           align-items: center;
           justify-content: center; }
+          @media only screen and (max-width: 280px) {
+            #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-prev-icon,
+            #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-next-icon,
+            #home #carrusel #carouselIndicators .carousel-control-next .carousel-control-prev-icon,
+            #home #carrusel #carouselIndicators .carousel-control-next .carousel-control-next-icon {
+              background-size: 23px;
+              height: 40px;
+              min-height: 40px;
+              min-width: 40px; } }
           @media only screen and (min-width: 550px) {
             #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-prev-icon,
             #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-next-icon,
