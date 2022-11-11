@@ -109,6 +109,9 @@ body {
   padding: 10%; }
   #video #P1 {
     max-height: 95%; }
+  @media only screen and (min-width: 280px) {
+    #video {
+      height: 211px; } }
   @media only screen and (min-width: 375px) {
     #video {
       height: 250px; } }
@@ -224,6 +227,9 @@ body {
   border-radius: 1rem; }
   @media only screen and (max-width: 1200px) {
     #backmodal {
+      width: 50%;
+      margin: 5% 25%;
+      min-width: 550px;
       flex-direction: column;
       height: 90%;
       justify-content: space-evenly;
@@ -310,7 +316,7 @@ body {
   animation-duration: 0.6s; }
   @media only screen and (max-width: 912px) {
     #caption {
-      font-size: 25px; } }
+      font-size: 20px; } }
   @media only screen and (max-width: 1630px) {
     #caption {
       padding: 0 30px; } }
@@ -545,11 +551,11 @@ section {
         background-color: var(--blueColor);
         background-blend-mode: overlay; }
       #home #carrusel #carouselIndicators .carousel-item #primeraimagen {
-        background-image: url(../IMG/21.jpg); }
+        background-image: url(../IMG/21.webp); }
       #home #carrusel #carouselIndicators .carousel-item #segundaimagen {
-        background-image: url(../IMG/13.jpg); }
+        background-image: url(../IMG/13.webp); }
       #home #carrusel #carouselIndicators .carousel-item #terceraimagen {
-        background-image: url(../IMG/29.jpg); }
+        background-image: url(../IMG/29.webp); }
       #home #carrusel #carouselIndicators .carousel-caption {
         position: absolute;
         top: 50%;
