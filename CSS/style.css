@@ -33,12 +33,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
   background-color: var(--darkColor); }
-  @media only screen and (max-width: 280px) {
-    html,
-    body {
-      margin-left: -3.5%; } }
   @media only screen and (min-width: 1024px) {
     html,
     body {
@@ -109,9 +104,6 @@ body {
   padding: 10%; }
   #video #P1 {
     max-height: 95%; }
-  @media only screen and (min-width: 280px) {
-    #video {
-      height: 211px; } }
   @media only screen and (min-width: 375px) {
     #video {
       height: 250px; } }
@@ -605,17 +597,9 @@ section {
           @media only screen and (min-width: 2000px) {
             #home #carrusel #carouselIndicators .carousel-caption .SecondTitleMainSlider {
               font-size: 70px; } }
-      @media only screen and (max-width: 280px) {
-        #home #carrusel #carouselIndicators .carousel-control-prev {
-          left: -2%; } }
       #home #carrusel #carouselIndicators .carousel-control-prev,
       #home #carrusel #carouselIndicators .carousel-control-next {
         display: flex; }
-        @media only screen and (max-width: 280px) {
-          #home #carrusel #carouselIndicators .carousel-control-prev,
-          #home #carrusel #carouselIndicators .carousel-control-next {
-            width: 30%;
-            margin: 1%; } }
         #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-prev-icon,
         #home #carrusel #carouselIndicators .carousel-control-prev .carousel-control-next-icon,
         #home #carrusel #carouselIndicators .carousel-control-next .carousel-control-prev-icon,

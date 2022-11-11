@@ -157,18 +157,10 @@ section {
           }
         }
       }
-      .carousel-control-prev {
-        @media only screen and (max-width: 280px) {
-          left: -2%;
-        }
-      }
+
       .carousel-control-prev,
       .carousel-control-next {
         display: flex;
-        @media only screen and (max-width: 280px) {
-          width: 30%;
-          margin: 1%;
-        }
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
           height: 50px;
