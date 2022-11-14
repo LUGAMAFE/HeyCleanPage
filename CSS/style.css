@@ -41,7 +41,8 @@ body {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .slideanim {
   visibility: hidden;
@@ -307,14 +308,16 @@ body {
   margin: auto;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: black;
   font-size: 15px;
   animation-name: fade;
   animation-duration: 0.6s;
-  padding: 30px; }
+  margin: 30px;
+  border-radius: inherit;
+  background: white; }
   @media only screen and (min-width: 281px) {
     #caption {
-      padding: 60px; } }
+      margin: 60px; } }
   @media only screen and (min-width: 912px) {
     #caption {
       font-size: 20px; } }
