@@ -93,15 +93,15 @@ section {
           background-blend-mode: overlay;
         }
         #primeraimagen {
-          background-image: url(../IMG/21.jpg);
+          background-image: url(../IMG/21.webp);
         }
 
         #segundaimagen {
-          background-image: url(../IMG/13.jpg);
+          background-image: url(../IMG/13.webp);
         }
 
         #terceraimagen {
-          background-image: url(../IMG/29.jpg);
+          background-image: url(../IMG/29.webp);
         }
       }
       .carousel-caption {
@@ -136,6 +136,9 @@ section {
         .SecondTitleMainSlider {
           font-size: 25px;
           /*    text-shadow: -4px 5px var(--darkColor);*/
+          @media only screen and (min-width: 280px) {
+            font-size: 20px;
+          }
 
           @media only screen and (min-width: 700px) {
             font-size: 30px;
@@ -172,6 +175,13 @@ section {
           display: flex;
           align-items: center;
           justify-content: center;
+          @media only screen and (max-width: 280px) {
+            background-size: 23px;
+            height: 40px;
+            min-height: 40px;
+            min-width: 40px;
+          }
+
           @media only screen and (min-width: 550px) {
             height: 80px;
             width: 80px;

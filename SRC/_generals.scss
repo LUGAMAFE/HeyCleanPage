@@ -37,7 +37,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 320px;
   background-color: var(--darkColor);
   @media only screen and (min-width: 1024px) {
     font-size: 14px;
@@ -47,4 +46,5 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }

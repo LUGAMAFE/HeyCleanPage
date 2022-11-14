@@ -10,6 +10,7 @@
 
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,9 +20,9 @@
       format("embedded-opentype"),
     url("../fonts/bodoni_sans_text_bold-webfont.woff2") format("woff2"),
     url("../fonts/bodoni_sans_text_bold-webfont.ttf") format("truetype");
-
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -34,6 +35,7 @@
 
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -45,6 +47,7 @@
     url("../fonts/bodoni_sans_text_regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -57,4 +60,5 @@
 
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

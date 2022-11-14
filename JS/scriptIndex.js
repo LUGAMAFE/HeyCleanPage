@@ -65,7 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //        x.className = "topnav";
   //    }
   //}
-
+});
+document.addEventListener("DOMContentLoaded", () => {
   // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
 
