@@ -44,18 +44,13 @@
     width: calc(var(--loaderHeight) * 5);
     #loaderlogogito {
       min-width: var(--loaderHeight);
-      height: var(--loaderHeight);
       align-self: center;
-      -webkit-animation: logom linear var(--tiempo);
-      animation: logom linear var(--tiempo);
     }
 
     #contletras {
       width: 0px;
       overflow: hidden;
 
-      -webkit-animation: letras linear var(--tiempo);
-      animation: letras linear var(--tiempo);
       #loaderletras {
         height: var(--loaderHeight);
       }
@@ -106,64 +101,6 @@
 
   @media only screen and (min-width: 2700px) {
     height: 1400px;
-  }
-}
-
-@-webkit-keyframes logom {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  15% {
-    transform: rotate(360deg);
-  }
-
-  50% {
-    transform: rotate(360deg);
-  }
-
-  70% {
-    transform: rotate(0deg);
-  }
-
-  80% {
-    transform: rotate(0deg);
-    transform: scale(1);
-  }
-
-  85% {
-    opacity: 1;
-    filter: blur(0px);
-    transform: scale(3);
-  }
-
-  92% {
-    opacity: 0;
-    filter: blur(7px);
-  }
-
-  100% {
-    opacity: 0;
-    filter: blur(20px);
-    transform: rotate(360deg);
-    transform: scale(15);
-  }
-}
-
-@-webkit-keyframes letras {
-  0% {
-  }
-
-  15% {
-    width: 100%;
-  }
-
-  50% {
-    width: 100%;
-  }
-
-  70% {
-    width: 0px;
   }
 }
 
