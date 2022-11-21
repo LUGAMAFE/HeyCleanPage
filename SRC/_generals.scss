@@ -5,6 +5,10 @@
   --whiteColor: #ededed;
   --headerHeight: 70px;
   --loaderHeight: 50px;
+  @media only screen and (min-width: 280px) {
+    --loaderHeight: 40px;
+  }
+
   @media only screen and (min-width: 400px) {
     --loaderHeight: 75px;
   }

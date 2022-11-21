@@ -5,6 +5,9 @@
   --whiteColor: #ededed;
   --headerHeight: 70px;
   --loaderHeight: 50px; }
+  @media only screen and (min-width: 280px) {
+    :root {
+      --loaderHeight: 40px; } }
   @media only screen and (min-width: 400px) {
     :root {
       --loaderHeight: 75px; } }
@@ -85,8 +88,13 @@ body {
     margin-top: 45vh;
     width: calc(var(--loaderHeight) * 5); }
     #loadercito #contlogo #loaderlogogito {
-      min-width: var(--loaderHeight);
       align-self: center; }
+      @media only screen and (min-width: 280px) {
+        #loadercito #contlogo #loaderlogogito {
+          width: 25%; } }
+      @media only screen and (min-width: 400px) {
+        #loadercito #contlogo #loaderlogogito {
+          width: 20%; } }
     #loadercito #contlogo #contletras {
       width: 0px;
       overflow: hidden; }
