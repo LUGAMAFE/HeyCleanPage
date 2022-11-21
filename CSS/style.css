@@ -91,10 +91,10 @@ body {
       align-self: center; }
       @media only screen and (min-width: 280px) {
         #loadercito #contlogo #loaderlogogito {
-          width: 25%; } }
+          width: 20%; } }
       @media only screen and (min-width: 400px) {
         #loadercito #contlogo #loaderlogogito {
-          width: 20%; } }
+          width: 16%; } }
     #loadercito #contlogo #contletras {
       width: 0px;
       overflow: hidden; }
