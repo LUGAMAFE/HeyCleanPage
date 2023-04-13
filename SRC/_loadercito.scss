@@ -42,9 +42,16 @@
     align-items: center;
     margin-top: 45vh;
     width: calc(var(--loaderHeight) * 5);
+
     #loaderlogogito {
-      min-width: var(--loaderHeight);
       align-self: center;
+      @media only screen and (min-width: 280px) {
+        width: 20%;
+      }
+
+      @media only screen and (min-width: 400px) {
+        width: 16%;
+      }
     }
 
     #contletras {

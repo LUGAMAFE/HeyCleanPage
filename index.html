@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta
       name="viewport"
-      content="widht-device-widht, initial-scale=1, maximum-scale=1"
+      content="widht-device-widht, initial-scale=1, maximum-scale=3"
     />
     <meta
       name="keywords"
@@ -102,6 +102,8 @@
 
         <button
           id="menuButton"
+          value="boton hamburger"
+          aria-label="boton hamburger"
           class="hamburger hamburger--elastic"
           type="button"
         >
@@ -114,16 +116,36 @@
       <nav id="myTopnav">
         <ul>
           <li>
-            <a href="#ahome" class="active" onclick="desactivarNav()">Home</a>
+            <a
+              role="link"
+              href="#ahome"
+              class="active"
+              onclick="desactivarNav()"
+              >Home</a
+            >
           </li>
-          <li><a href="#aservicios" onclick="desactivarNav()">Servicios</a></li>
-          <li><a href="#agaleria" onclick="desactivarNav()">Galeria</a></li>
           <li>
-            <a href="#asobre" onclick="desactivarNav()">Sobre Nosotros</a>
+            <a role="link" href="#aservicios" onclick="desactivarNav()"
+              >Servicios</a
+            >
           </li>
-          <li><a href="#asiguenos" onclick="desactivarNav()">Síguenos</a></li>
           <li>
-            <a href="#acontacto" onclick="desactivarNav()"
+            <a role="link" href="#agaleria" onclick="desactivarNav()"
+              >Galeria</a
+            >
+          </li>
+          <li>
+            <a role="link" href="#asobre" onclick="desactivarNav()"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li>
+            <a role="link" href="#asiguenos" onclick="desactivarNav()"
+              >Síguenos</a
+            >
+          </li>
+          <li>
+            <a role="link" href="#acontacto" onclick="desactivarNav()"
               ><span>&#xe958;</span>Contacto</a
             >
           </li>
@@ -136,7 +158,7 @@
     <!--  espacio para el header pagina-->
 
     <section id="home" class="anchor">
-      <a name="ahome">&nbsp;</a>
+      <a role="link" name="ahome">&nbsp;</a>
       <div id="carrusel">
         <div
           id="carouselIndicators"
@@ -186,6 +208,7 @@
             </div>
           </div>
           <a
+            role="link"
             class="carousel-control-prev"
             href="#carouselIndicators"
             role="button"
@@ -195,6 +218,7 @@
             <span class="sr-only">Previous</span>
           </a>
           <a
+            role="link"
             class="carousel-control-next"
             href="#carouselIndicators"
             role="button"
@@ -212,7 +236,7 @@
     </section>
 
     <section id="servicios" class="anchor">
-      <a name="aservicios">&nbsp;</a>
+      <a role="link" name="aservicios">&nbsp;</a>
       <div id="serviciosVista" class="wraper">
         <div id="serviciosInfo">
           <h2>Servicios</h2>
@@ -280,7 +304,7 @@
       </div>
     </section>
     <section id="galeria" class="anchor">
-      <a name="agaleria">&nbsp;</a>
+      <a role="link" name="agaleria">&nbsp;</a>
       <div class="wraper">
         <div class="iso-nav">
           <ul>
@@ -778,7 +802,7 @@
       </div>
     </section>
     <section id="sobre" class="anchor">
-      <a name="asobre">&nbsp;</a>
+      <a role="link" name="asobre">&nbsp;</a>
       <div id="wrapperSobre">
         <h2 class="slideanim">Misión</h2>
         <p class="slideanim">
@@ -790,7 +814,7 @@
       </div>
     </section>
     <section id="vision" class="anchor">
-      <a name="avision">&nbsp;</a>
+      <a role="link" name="avision">&nbsp;</a>
       <h2 class="slideanim">Visión</h2>
       <p class="slideanim">
         Expandir nuestros servicios de limpieza profesional destacando por
@@ -799,7 +823,7 @@
       </p>
     </section>
     <section id="acercade" class="anchor">
-      <a name="aacercade">&nbsp;</a>
+      <a role="link" name="aacercade">&nbsp;</a>
       <div id="wrapperAcerca">
         <h2 class="slideanim">Acerca De</h2>
         <p class="slideanim">
@@ -818,21 +842,22 @@
       </div>
     </section>
     <section id="siguenos" class="anchor">
-      <a name="asiguenos">&nbsp;</a>
+      <a role="link" name="asiguenos">&nbsp;</a>
       <div id="wrapperSiguenos">
         <h2>¡Síguenos en nuestras Redes!</h2>
         <!--SECCION REDES SOCIALES   -->
         <div id="redesSociales">
-          <a href="https://www.facebook.com/Heyclean/"></a>
-          <a href="https://www.instagram.com/heycleanmx/"></a>
+          <a role="link" href="https://www.facebook.com/Heyclean/"></a>
+          <a role="link" href="https://www.instagram.com/heycleanmx/"></a>
           <a
+            role="link"
             href="https://www.youtube.com/channel/UCYJBV6YSZLBNQJlsa_7RGOQ"
           ></a>
         </div>
       </div>
     </section>
     <section id="contacto" class="anchor">
-      <a name="acontacto">&nbsp;</a>
+      <a role="link" name="acontacto">&nbsp;</a>
       <!-- division para la animacion del home -->
       <div class="animation">
         <div id="particles-js"></div>
@@ -849,7 +874,7 @@
         </p>
         <p id="nuestroTel">
           Nuestro Teléfono:
-          <a href="tel:999-352-2085">9993522085</a>
+          <a role="link" href="tel:999-352-2085">9993522085</a>
         </p>
         <div id="formularioCont">
           <form id="formulario" action="PHP/contact.php" method="post">

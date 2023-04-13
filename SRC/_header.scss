@@ -45,7 +45,14 @@ header {
 
       img {
         position: relative;
-        height: 85%;
+        height: 65%;
+
+        @media only screen and (min-width: 1024px) {
+          height: 70%;
+        }
+        @media only screen and (min-width: 1440px) {
+          height: 85%;
+        }
       }
       #titulosLogo {
         height: a var(--headerHeight);
@@ -80,6 +87,9 @@ header {
     }
     button {
       position: relative;
+      &:focus {
+        outline: none;
+      }
     }
   }
   @media only screen and (min-width: 1024px) {
